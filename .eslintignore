@@ -1,0 +1,11 @@
+/node_modules
+/.next
+/out
+/storybook-static
+server.js
+/.vscode
+/typings
+/package-lock.json
+/next.config.js
+/**/i18n.js
+/**/*.stories.*

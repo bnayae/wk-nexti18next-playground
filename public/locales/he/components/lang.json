@@ -1,0 +1,6 @@
+{
+  "change-locale": "שנה שפה",
+  "counter_zero": "לא חל שינוי בשפה",
+  "counter_one": "שפה השתנתה פעם אחת",
+  "counter_other": "פעמים {{count}} השפה השתנתה"
+}

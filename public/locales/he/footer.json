@@ -1,0 +1,6 @@
+{
+  "date": "היום {{date, DATE_HUGE}}",
+  "date_morning": "בוקר טוב {{date, DATE_HUGE}} | שמחה ואושר",
+  "date_afternoon": "אחר צהריים טובים {{date, DATE_HUGE}}",
+  "date_evening": "ערב טוב {{date, DATE_HUGE}}"
+}

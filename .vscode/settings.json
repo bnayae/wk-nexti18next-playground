@@ -1,0 +1,45 @@
+{
+    "cSpell.words": [
+    ],
+    "cSpell.ignorePaths": [
+      "**/package-lock.json",
+      "**/node_modules/**",
+      "**/vscode-extension/**",
+      "**/.git/**",
+      ".vscode",
+      "typings",
+      "/public/static/de/**",
+      "/public/static/he/**"
+    ],
+    "typescript.referencesCodeLens.enabled": true,
+    "typescript.implementationsCodeLens.enabled": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "[typescript]": {
+      "editor.formatOnSave": true,
+      "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+      }
+    },
+    "[typescriptreact]": {
+      "editor.formatOnSave": true,
+      "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+      }
+    },
+    "[javascriptreact]": {
+      "editor.formatOnSave": true
+    },
+    "[javascript]": {
+      "editor.formatOnSave": true
+    },
+    "[json]": {
+      "editor.formatOnSave": true
+    },
+    "[jsonc]": {
+      "editor.formatOnSave": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "debug.javascript.warnOnLongPrediction": false
+  }

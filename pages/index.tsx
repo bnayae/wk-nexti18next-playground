@@ -20,13 +20,13 @@ const IndexPage = ({ locale }) => {
   );
 };
 
-export async function getStaticProps({ locale }) {
+export const getStaticProps = async ({ locale }) => {
   return {
     props: {
       locale,
       ...(await serverSideTranslations(locale, ['home', 'common'])),
     },
   };
-}
+};
 
 export default IndexPage;

@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import React, { ReactNode } from 'react';
+import { LangSwitcher } from '.';
 import { Footer } from './Footer';
 
 type Props = {
@@ -16,6 +17,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
     <header>
+      <LangSwitcher />
       <nav>
         <Link href="/">
           <a>Home</a>

@@ -1,11 +1,12 @@
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Link from 'next/link';
+import { localeCommonNamespaces } from '../@localization';
 import Layout from '../components/Layout';
 
 const IndexPage = ({ locale }) => {
   const { t } = useTranslation();
-  const welcome = t('home:welcome');
+  const welcome = t('screens-home:welcome');
 
   return (
     <Layout title={`Home | ${welcome}`}>
@@ -24,7 +25,10 @@ export const getStaticProps = async ({ locale }) => {
   return {
     props: {
       locale,
-      ...(await serverSideTranslations(locale, ['home', 'common', 'footer'])),
+      ...(await serverSideTranslations(locale, [
+        'screens-home',
+        ...localeCommonNamespaces,
+      ])),
     },
   };
 };

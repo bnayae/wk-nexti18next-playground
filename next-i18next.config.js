@@ -28,7 +28,6 @@ module.exports = {
   // use: [
   //   require('i18next-locize-backend/cjs')
   // ],
-  // ns: ['common', 'footer', 'components/lang'], // the namespaces needs to be listed here, to make sure they got preloaded
   // serializeConfig: false, // because of the custom use i18next plugin
   // debug: true,
   // saveMissing: true, // do not saveMissing to true for production

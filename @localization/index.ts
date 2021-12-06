@@ -1,0 +1,1 @@
+export { localeCommonNamespaces } from './localeCommonNamespaces';

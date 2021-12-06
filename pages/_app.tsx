@@ -1,6 +1,7 @@
 import { appWithTranslation } from 'next-i18next';
 import App from 'next/app';
 import React from 'react';
+import nextI18NextConfig from '../next-i18next.config';
 
 const MyApp = ({ Component, pageProps }) => {
   return (
@@ -23,4 +24,4 @@ MyApp.getInitialProps = async (appContext) => ({
   ...(await App.getInitialProps(appContext)),
 });
 
-export default appWithTranslation(MyApp);
+export default appWithTranslation(MyApp, nextI18NextConfig);

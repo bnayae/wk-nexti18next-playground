@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import React, { ReactNode } from 'react';
+import { Footer } from './Footer';
 
 type Props = {
   children?: ReactNode;
@@ -31,12 +32,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
       </nav>
     </header>
     {children}
-    <footer>
-      <hr />
-      <a href="https://i18nexus.com/nextjs-tutorial/" target="_blank">
-        credit
-      </a>
-    </footer>
+    <Footer />
   </div>
 );
 

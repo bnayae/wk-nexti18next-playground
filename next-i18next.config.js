@@ -1,8 +1,21 @@
-// next-i18next.config.js
+const { DateTime } = require('luxon');
+
 module.exports = {
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'he', 'zh'],
+    interpolation: {
+      escapeValue: false, // not needed for react as it escapes by default
+      format: (value, format, lng) => {
+        if (value instanceof Date) {
+          return DateTime.fromJSDate(value)
+            .setLocale(lng)
+            .toLocaleString(DateTime[format]);
+        }
+        return value;
+      },
+    },
+    serializeConfig: false,
   },
   // this will download the translations from locize directly, in client (browser) and server (node.js)
   // DO NOT USE THIS if having a serverless environment => this will generate too much download requests

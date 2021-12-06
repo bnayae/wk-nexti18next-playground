@@ -1,7 +1,8 @@
+// next-i18next.config.js
 module.exports = {
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'he'],
+    locales: ['en', 'he', 'zh'],
   },
   // this will download the translations from locize directly, in client (browser) and server (node.js)
   // DO NOT USE THIS if having a serverless environment => this will generate too much download requests

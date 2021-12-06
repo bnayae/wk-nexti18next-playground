@@ -1,6 +1,0 @@
-{
-  "change-locale": "Change Language",
-  "counter_zero": "Language didn't changed",
-  "counter_one": "Changed language just once",
-  "counter_other": "Changed language already {{count}} times"
-}

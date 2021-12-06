@@ -1,4 +1,4 @@
-// import { appWithTranslation } from 'next-i18next';
+import { appWithTranslation } from 'next-i18next';
 import App from 'next/app';
 import React from 'react';
 
@@ -23,5 +23,4 @@ MyApp.getInitialProps = async (appContext) => ({
   ...(await App.getInitialProps(appContext)),
 });
 
-export default MyApp;
-// export default appWithTranslation(MyApp, nextI18NextConfig);
+export default appWithTranslation(MyApp);

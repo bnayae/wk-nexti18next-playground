@@ -4,8 +4,12 @@ import { useTranslation } from 'react-i18next';
 const getGreetingTime = (d = DateTime.now()) => {
   const split_afternoon = 12; // 24hr time to split the afternoon
   const split_evening = 17; // 24hr time to split the evening
-  const currentHour = parseFloat(d.toFormat('hh'));
+  const currentHour = parseFloat(d.toFormat('HH'));
 
+  console.log('## Greet time', {
+    currentHour,
+    ev: currentHour >= split_evening,
+  });
   if (currentHour >= split_afternoon && currentHour <= split_evening) {
     return 'afternoon';
   } else if (currentHour >= split_evening) {

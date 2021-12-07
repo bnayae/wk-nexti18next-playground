@@ -1,12 +1,34 @@
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { useMemo } from 'react';
 import { localeCommonNamespaces } from '../@localization';
 import Layout from '../components/Layout';
 
+const useTest = (): string | undefined => {
+  const { query } = useRouter();
+
+  const test = useMemo(() => {
+    if (!process.browser) return undefined;
+    const t = query['test'];
+    if (t == null) return sessionStorage?.getItem('test');
+
+    const result = Array.isArray(t) ? t[0] : t;
+    sessionStorage?.setItem('test', result);
+    return result;
+  }, [query, process.browser]);
+
+  return test;
+};
+
 const IndexPage = ({ locale }) => {
+  const test = useTest();
   const { t } = useTranslation();
-  const welcome = t('screens-home:welcome');
+  const welcome = useMemo(
+    () => t('screens-home:welcome', { context: test }),
+    [test]
+  );
 
   return (
     <Layout title={`Home | ${welcome}`}>

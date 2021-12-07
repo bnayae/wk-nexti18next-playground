@@ -1,1 +1,1 @@
-{"date":"今天是{{date, DATE_HUGE}}","date_evening":"晚上好！今天是{{date, DATE_HUGE}}","date_morning":"'早上好！今天是{{date, DATE_HUGE}} |祝你今天过得愉快！'","date_afternoon":"下午好！ {{date, DATE_HUGE}}"}
+{"date":"今天是{{date, DATE_HUGE}}","date_afternoon":"下午好！ {{date, DATE_HUGE}}","date_evening":"晚上好！今天是{{date, DATE_HUGE}}","date_morning":"'早上好！今天是{{date, DATE_HUGE}} |祝你今天过得愉快！'"}

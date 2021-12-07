@@ -1,1 +1,1 @@
-{"date":"היום הוא {{date, DATE_HUGE}}","date_afternoon":"אחר הצהריים טובים! זה {{date, DATE_HUGE}}","date_evening":"ערב טוב! היום היה {{date, DATE_HUGE}}","date_morning":"'בוקר טוב! היום הוא {{date, DATE_HUGE}} | שיהיה לך יום נעים!'"}
+{"date":"היום הוא {{date, DATE_HUGE}}","date_evening":"ערב טוב! היום היה {{date, DATE_HUGE}}","date_morning":"'בוקר טוב! היום הוא {{date, DATE_HUGE}} | שיהיה לך יום נעים!'","date_afternoon":"אחר הצהריים טובים! זה {{date, DATE_HUGE}}"}
